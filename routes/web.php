@@ -12,12 +12,5 @@
 */
 
 Route::get('/', function () {
-    $connection = pg_connect ("host=localhost dbname=testePHP user=postgres password=123");
-    if($connection) {
-       return 'connected';
-    } else {
-        return 'there has been an error connecting';
-    } 
-    return App\Consulta::all();
-    return view('welcome');
+    return view('index');
 });
