@@ -18,8 +18,8 @@
                     <td>{{$consulta->nome_medico}}</td>
                     <td>{{$consulta->numero_guia_consulta}}</td>
                     <td>{{$consulta->data_consulta}}</td>
-                    <td>{{$consulta->valor_consulta }}</td>
-                    <td>{{$consulta->gasto_consulta }}</td>
+                    <td>{{ number_format($consulta->valor_consulta, 2, ',', ' ') }}</td>
+                    <td>{{ number_format($consulta->gasto_consulta, 2, ',', ' ') }}</td>
                     <td>{{$consulta->exames()->count() }}</td>
                 </tr>
                 @endforeach

@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () { return view('consultas/index'); });
+Route::get('/','ConsultaController@index');
 
-Route::get('pesquisar','ConsultaController@pesquisar');
+Route::post('pesquisar','ConsultaController@pesquisar');
