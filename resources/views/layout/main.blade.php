@@ -22,36 +22,18 @@
 	
 </head>
 <body>
-	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light border-bottom">
-		<a class="navbar-brand" href="{{url('/')}}"> <img src="{{ url('img/logo.png') }}" /></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav float-md-left">
-			</ul>
-		</div>
-	</nav>
+    <div class="row">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light border-bottom">
+            <a class="navbar-brand" href="{{url('/')}}"> <img src="{{ url('img/logo.png') }}" /></a>
+        </nav>
+    </div>
 
     <div class="container-fluid mt-5" id="body-content">
-		<div class="row">
-			<div class="col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-8 offset-lg-2 mt-3">
-				<div class="content-div">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4>Início</h4>
-                        </div>
-                        <div class="card-body">
-                        </div>
-                    </div>
-				</div>
-			</div>			
-		</div>
+        @yield('content')
 	</div>
     
 
-	<script type="text/javascript">const main_url = '{{url('/')}}/';</script>
+	<script type="text/javascript">const main_url = '{{url('/')}}';</script>
 	<script type="text/javascript" src="{{ url('js/bibliotecas/jquery/jquery-3.2.1.min.js')}}"></script>
 	<script type="text/javascript" src="{{ url('js/bibliotecas/jquery/validator/jquery.validate.min.js')}}"></script>
 	<script type="text/javascript" src="{{ url('js/bibliotecas/jquery/validator/localization/messages_pt_BR.min.js')}}"></script>

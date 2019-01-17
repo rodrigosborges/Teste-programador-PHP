@@ -13,4 +13,11 @@ class Consulta extends Model{
         "numero_guia_consulta", "cod_medico", "nome_medico", "data_consulta", "valor_consulta",
     ];
 
+    public function exames(){
+        return $this->hasMany('App\Exame','numero_guia_consulta', 'numero_guia_consulta');
+    }
+
+    public function getDataConsultaAttribute($value){
+        return date('d/m/Y', strtotime($value));
+    }
 }
