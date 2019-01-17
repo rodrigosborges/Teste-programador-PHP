@@ -1,5 +1,5 @@
 body{
-    background: #2c3e50;
+    background: #e5e5e5;
     margin-top: 57px;
 }
 
@@ -7,7 +7,7 @@ footer{
     margin: 15;
     text-align: center;
     width: "100%";
-    color:white
+    color:black
 }
 
 .btn-light{
@@ -63,9 +63,9 @@ input.error,select.error{
 }
 
 .navbar{
-    -webkit-box-shadow: 0 5px 4px -4px rgb(110, 109, 109);
-    -moz-box-shadow: 0 5px 4px -4px rgb(110, 109, 109);
-    box-shadow: 0 5px 4px -4px rgb(110, 109, 109);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.1);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,.1);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.1);
 }
 
 /*CSS EXCLUSIVO DE USO P/ PAGINAÇÃO*/

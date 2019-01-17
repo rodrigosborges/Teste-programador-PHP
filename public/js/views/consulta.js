@@ -15,7 +15,7 @@ search = (url) => {
 
 $("#sendForm").on("click",function() {
     if($("#form").valid())
-        search(`${main_url}/pesquisar`)
+        search(`${main_url}/list`)
 })
 
 $('#results').on('click', 'ul.pagination a', function(e){
@@ -23,14 +23,15 @@ $('#results').on('click', 'ul.pagination a', function(e){
     search($(this).attr('href'))
 })
 
-$(document).ready(() => {
-    search(`${main_url}/pesquisar`)
-})
-
-
-
-//validator
 $(document).ready(function(){
+    search(`${main_url}/list`)
+
+    $(document).on('keypress',function(e) {
+        if(e.which == 13) {
+            search(`${main_url}/list`)
+        }
+    });
+
 	$('#form').validate({
 		rules: {			
             "de":{

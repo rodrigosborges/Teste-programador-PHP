@@ -1,7 +1,7 @@
 <p>{{$consultas->total()}} Registro(s) encontrado(s).</p>
 @if ($consultas->count())
     <div class="table-responsive">
-        <table class="table table-striped">
+        <table class="table">
             <thead>
             <tr>
                 <th>Nome do Médico</th>

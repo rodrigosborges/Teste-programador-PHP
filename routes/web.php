@@ -13,4 +13,4 @@
 
 Route::get('/','ConsultaController@index');
 
-Route::post('pesquisar','ConsultaController@pesquisar');
+Route::post('list','ConsultaController@list');

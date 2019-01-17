@@ -6,7 +6,7 @@
 	<meta name="author" content="Rodrigo Borges">
 	<meta http-equiv='cache-control' content='no-cache'>
 
-	<title>Teste PHP</title>
+	<title>MAPES - Teste PHP</title>
 
 	<link rel="stylesheet" type="text/css" href="{{ url('css/bootstrap.min.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ url('css/style.css') }}">
@@ -38,7 +38,6 @@
 	<script type="text/javascript" src="{{ url('js/bibliotecas/popper.min.js') }}"></script>
 	<script type="text/javascript" src="{{ url('js/bibliotecas/bootstrap.min.js') }}"></script>
 	<script type="text/javascript" src="{{ url('js/bibliotecas/jquery/jquery.mask.min.js')}}"></script>
-	<script type="text/javascript" src="{{ url('js/validacao/validate-methods.js')}}"></script>
 	<script src="{{ url('js/bibliotecas/bootstrap-select.min.js') }}"></script>
 	<script type="text/javascript" src="{{ url('js/main.js') }}"></script>
 	<script type="text/javascript" src="{{ url('js/bibliotecas/defaults-pt_BR.min.js') }}"></script>

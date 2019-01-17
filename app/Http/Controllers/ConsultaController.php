@@ -13,19 +13,17 @@ class ConsultaController extends Controller{
         return view('consultas/index', compact('medicos'));
     }
     
-    public function pesquisar(Request $request){
+    public function list(Request $request){
         $data = $request->all();
         $consultas = new App\Consulta;
 
-        if(isset($data['nomeMedico']))
+        if(isset($data['nomeMedico']) && $data['nomeMedico'])
             $consultas = $consultas->whereIn('nome_medico', $data['nomeMedico']);
-        // if($data['periodo'])
-        //     $consultas = $consultas->where('data_consulta',implode('-', array_reverse(explode('/', $data['periodo']))));
 
-        if($data['de'])
+        if(isset($data['de']) && $data['de'])
             $consultas = $consultas->where('data_consulta','>=',implode('-', array_reverse(explode('/', $data['de']))));
 
-        if($data['ate'])
+        if(isset($data['ate']) && $data['ate'])
             $consultas = $consultas->where('data_consulta','<=',implode('-', array_reverse(explode('/', $data['ate']))));
 
         $consultas = $consultas->join('exame','exame.numero_guia_consulta','=','consulta.numero_guia_consulta');
